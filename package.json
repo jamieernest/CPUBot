@@ -1,0 +1,9 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "clean": "npm i && echo '{\n\t\"TOKEN\": \"TOKEN-HERE\",\n\t\"PREFIX\": \"!\"\n}' > config.json && echo '{\n\t\"main\": \"index.js\",\n\t\"dependencies\": {\n\t\t\"discord.js\": \"^12.5.1\"\n\t},\n\t\"description\": \"A Discord Bot\"\n}' > package.json && npm init -y"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
