@@ -8,7 +8,7 @@ module.exports = async (bot, msg) => {
   let args = [].concat
     .apply(
       [],
-      msg.content
+      msg.content.toLowerCase()
         .slice(PREFIX.length)
         .trim()
         .split('"')
@@ -17,9 +17,8 @@ module.exports = async (bot, msg) => {
         })
     )
     .filter(Boolean);
-  let message = msg.content.substring(0);
-
-  if (message.substring(0, PREFIX.length) == PREFIX) {
+  let message = msg.content.substring(0).toLowerCase();
+  if (message.substring(0, PREFIX.length).toLowerCase() == PREFIX) {
     const command =
       bot.commands.get(args[0]) ||
       bot.commands.find((cmd) => cmd.aliases && cmd.aliases.includes(args[0]));

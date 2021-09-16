@@ -4,6 +4,20 @@
     "clean": "npm i && echo '{\n\t\"TOKEN\": \"TOKEN-HERE\",\n\t\"PREFIX\": \"!\"\n}' > config.json && echo '{\n\t\"main\": \"index.js\",\n\t\"dependencies\": {\n\t\t\"discord.js\": \"^12.5.1\"\n\t},\n\t\"description\": \"A Discord Bot\"\n}' > package.json && npm init -y"
   },
   "dependencies": {
-    "discord.js": "^12.5.1"
-  }
+    "discord.js": "^12.5.3"
+  },
+  "name": "cpubot",
+  "description": "Please look at section [**Hosting the bot**](#hosting-the-bot) first, and decide which plan you would like. If you want me to host the bot for you, you only have to do sections [**Creating the bot account**](#creating-the-bot-account) and [**Configuration**](#configuration), and provide me details such as the bot token that needs to be filled into `config.json`.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamieernest/CPUBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamieernest/CPUBot/issues"
+  },
+  "homepage": "https://github.com/jamieernest/CPUBot#readme"
 }
